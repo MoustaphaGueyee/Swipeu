@@ -129,7 +129,7 @@ const EditAcademicInfoScreen = () => {
         </TouchableOpacity>
         <Text style={styles.headerTitle}>Academic Profile</Text>
         <LinearGradient
-          colors={['#FF6B6B', '#FF8E8E']}
+          colors={['#4A90E2', '#6AB0FF']}
           style={styles.saveButtonGradient}
           start={{x: 0, y: 0}}
           end={{x: 1, y: 0}}
@@ -289,7 +289,7 @@ const EditAcademicInfoScreen = () => {
                     onPress={() => handleRemoveItem(academicAchievements, setAcademicAchievements, item.id)}
                     hitSlop={{ top: 10, bottom: 10, left: 10, right: 10 }}
                   >
-                    <MaterialCommunityIcons name="close-circle" size={22} color="#FF6B6B" />
+                    <MaterialCommunityIcons name="close-circle" size={22} color="#4A90E2" />
                   </TouchableOpacity>
                 </View>
               ))}
@@ -332,7 +332,7 @@ const EditAcademicInfoScreen = () => {
                     onPress={() => handleRemoveItem(leadershipRoles, setLeadershipRoles, item.id)}
                     hitSlop={{ top: 10, bottom: 10, left: 10, right: 10 }}
                   >
-                    <MaterialCommunityIcons name="close-circle" size={22} color="#FF6B6B" />
+                    <MaterialCommunityIcons name="close-circle" size={22} color="#4A90E2" />
                   </TouchableOpacity>
                 </View>
               ))}
@@ -375,7 +375,7 @@ const EditAcademicInfoScreen = () => {
                     onPress={() => handleRemoveItem(clubs, setClubs, item.id)}
                     hitSlop={{ top: 10, bottom: 10, left: 10, right: 10 }}
                   >
-                    <MaterialCommunityIcons name="close-circle" size={22} color="#FF6B6B" />
+                    <MaterialCommunityIcons name="close-circle" size={22} color="#4A90E2" />
                   </TouchableOpacity>
                 </View>
               ))}
@@ -418,7 +418,7 @@ const EditAcademicInfoScreen = () => {
                     onPress={() => handleRemoveItem(athletics, setAthletics, item.id)}
                     hitSlop={{ top: 10, bottom: 10, left: 10, right: 10 }}
                   >
-                    <MaterialCommunityIcons name="close-circle" size={22} color="#FF6B6B" />
+                    <MaterialCommunityIcons name="close-circle" size={22} color="#4A90E2" />
                   </TouchableOpacity>
                 </View>
               ))}
@@ -461,7 +461,7 @@ const EditAcademicInfoScreen = () => {
                     onPress={() => handleRemoveItem(interests, setInterests, item.id)}
                     hitSlop={{ top: 10, bottom: 10, left: 10, right: 10 }}
                   >
-                    <MaterialCommunityIcons name="close-circle" size={22} color="#FF6B6B" />
+                    <MaterialCommunityIcons name="close-circle" size={22} color="#4A90E2" />
                   </TouchableOpacity>
                 </View>
               ))}
@@ -602,12 +602,12 @@ const styles = StyleSheet.create({
     borderColor: '#e8e8e8',
   },
   addButton: {
-    backgroundColor: '#FF6B6B',
+    backgroundColor: '#4A90E2',
     padding: 12,
     borderRadius: 12,
     justifyContent: 'center',
     alignItems: 'center',
-    shadowColor: '#FF6B6B',
+    shadowColor: '#4A90E2',
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.2,
     shadowRadius: 3,

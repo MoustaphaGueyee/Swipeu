@@ -257,7 +257,6 @@ const ProfileScreen = () => {
           <View style={styles.profilePicContainer}>
             <TouchableOpacity onPress={handleChangePicture}>
               <Image source={{ uri: profilePic }} style={styles.profilePic} />
-              <View style={styles.editIconContainer}><Ionicons name="camera" size={20} color="#fff" /></View>
             </TouchableOpacity>
           </View>
           <Text style={styles.email}>{userEmail}</Text>
@@ -277,7 +276,7 @@ const ProfileScreen = () => {
                 <MaterialCommunityIcons 
                   name={tabName === 'academics' ? "school" : tabName === 'activities' ? "run-fast" : "crown"} 
                   size={18} 
-                  color={activeTab === tabName ? '#FF6B6B' : '#666'} 
+                  color={activeTab === tabName ? '#4A90E2' : '#666'} 
                 />
                 <Text style={[styles.tabText, activeTab === tabName && styles.activeTabText]}>
                   {tabName.charAt(0).toUpperCase() + tabName.slice(1)}
@@ -289,17 +288,17 @@ const ProfileScreen = () => {
         </View>
         <View style={styles.actionButtonsContainer}>
           <TouchableOpacity style={styles.actionButton} onPress={() => router.push('/communities')}>
-            <View style={[styles.iconCircle, { backgroundColor: 'rgba(255, 107, 107, 0.15)' }]}><Ionicons name="people" size={24} color="#FF6B6B" /></View>
+            <View style={[styles.iconCircle, { backgroundColor: 'rgba(74, 144, 226, 0.15)' }]}><Ionicons name="people" size={24} color="#4A90E2" /></View>
             <Text style={styles.actionButtonText}>Communities</Text>
             <Ionicons name="chevron-forward" size={20} color="#ccc" style={styles.actionArrow} />
           </TouchableOpacity>
           <TouchableOpacity style={styles.actionButton} onPress={() => router.push('/swipes-history')}>
-            <View style={[styles.iconCircle, { backgroundColor: 'rgba(255, 107, 107, 0.15)' }]}><Ionicons name="heart" size={24} color="#FF6B6B" /></View>
+            <View style={[styles.iconCircle, { backgroundColor: 'rgba(74, 144, 226, 0.15)' }]}><Ionicons name="heart" size={24} color="#4A90E2" /></View>
             <Text style={styles.actionButtonText}>Swipes</Text>
             <Ionicons name="chevron-forward" size={20} color="#ccc" style={styles.actionArrow} />
           </TouchableOpacity>
           <TouchableOpacity style={styles.actionButton} onPress={() => router.push('/recommended-colleges')}>
-            <View style={[styles.iconCircle, { backgroundColor: 'rgba(255, 107, 107, 0.15)' }]}><Ionicons name="star" size={24} color="#FF6B6B" /></View>
+            <View style={[styles.iconCircle, { backgroundColor: 'rgba(74, 144, 226, 0.15)' }]}><Ionicons name="star" size={24} color="#4A90E2" /></View>
             <Text style={styles.actionButtonText}>Recommended</Text>
             <Ionicons name="chevron-forward" size={20} color="#ccc" style={styles.actionArrow} />
           </TouchableOpacity>
@@ -316,22 +315,21 @@ const styles = StyleSheet.create({
   backButton: { padding: 5, width: 40 },
   greeting: { fontSize: 20, fontWeight: 'bold', color: '#333' },
   manageButton: { padding: 5 },
-  manageText: { fontSize: 16, color: '#FF6B6B', fontWeight: '500' },
+  manageText: { fontSize: 16, color: '#4A90E2', fontWeight: '500' },
   scrollContent: { padding: 20 },
   profileSection: { alignItems: 'center', marginBottom: 25, padding: 20, backgroundColor: '#fff', borderRadius: 16, shadowColor: '#000', shadowOffset: { width: 0, height: 2 }, shadowOpacity: 0.07, shadowRadius: 8, elevation: 2 },
   profilePicContainer: { marginBottom: 15, position: 'relative' },
   profilePic: { width: 120, height: 120, borderRadius: 60, backgroundColor: '#ddd', borderWidth: 4, borderColor: '#fff' },
-  editIconContainer: { position: 'absolute', right: 0, bottom: 0, backgroundColor: '#FF6B6B', width: 36, height: 36, borderRadius: 18, justifyContent: 'center', alignItems: 'center', borderWidth: 3, borderColor: '#fff' },
   email: { fontSize: 16, color: '#666' },
   quickStatsContainer: { width: '100%', backgroundColor: '#fff', borderRadius: 16, padding: 20, marginBottom: 25, shadowColor: '#000', shadowOffset: { width: 0, height: 4 }, shadowOpacity: 0.1, shadowRadius: 10, elevation: 5 },
   titleContainer: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginBottom: 20 },
   sectionTitle: { fontSize: 18, fontWeight: 'bold', color: '#333' },
-  editIcon: { backgroundColor: '#FF6B6B', width: 32, height: 32, borderRadius: 16, justifyContent: 'center', alignItems: 'center' },
+  editIcon: { backgroundColor: '#4A90E2', width: 32, height: 32, borderRadius: 16, justifyContent: 'center', alignItems: 'center' },
   tabsContainer: { flexDirection: 'row', borderBottomWidth: 1, borderBottomColor: '#f0f0f0', marginBottom: 15 },
   tab: { flex: 1, flexDirection: 'row', alignItems: 'center', justifyContent: 'center', paddingVertical: 10, paddingHorizontal: 5 },
-  activeTab: { borderBottomWidth: 2, borderBottomColor: '#FF6B6B' },
+  activeTab: { borderBottomWidth: 2, borderBottomColor: '#4A90E2' },
   tabText: { fontSize: 14, color: '#666', fontWeight: '500', marginLeft: 5 },
-  activeTabText: { color: '#FF6B6B', fontWeight: '600' },
+  activeTabText: { color: '#4A90E2', fontWeight: '600' },
   statsTabContent: { marginTop: 10 },
   statItem: { marginBottom: 24 },
   statHeader: { flexDirection: 'row', alignItems: 'center', marginBottom: 8 },
@@ -355,8 +353,8 @@ const styles = StyleSheet.create({
   iconCircle: { width: 48, height: 48, borderRadius: 24, justifyContent: 'center', alignItems: 'center', marginRight: 16 },
   actionButtonText: { fontSize: 16, fontWeight: '600', color: '#333', flex: 1 },
   actionArrow: { marginLeft: 'auto' },
-  logoutButton: { backgroundColor: '#fff', borderWidth: 1, borderColor: '#FF6B6B', paddingVertical: 16, paddingHorizontal: 30, borderRadius: 50, alignSelf: 'center', marginBottom: 30, shadowColor: '#FF6B6B', shadowOffset: { width: 0, height: 2 }, shadowOpacity: 0.1, shadowRadius: 5, elevation: 2 },
-  logoutText: { color: '#FF6B6B', fontSize: 16, fontWeight: '600' },
+  logoutButton: { backgroundColor: '#fff', borderWidth: 1, borderColor: '#4A90E2', paddingVertical: 16, paddingHorizontal: 30, borderRadius: 50, alignSelf: 'center', marginBottom: 30, shadowColor: '#4A90E2', shadowOffset: { width: 0, height: 2 }, shadowOpacity: 0.1, shadowRadius: 5, elevation: 2 },
+  logoutText: { color: '#4A90E2', fontSize: 16, fontWeight: '600' },
 });
 
 export default ProfileScreen; 

@@ -136,7 +136,7 @@ const Card: React.FC<CardProps> = ({ item, onFlipChange }) => {
             <Ionicons 
               name={isFavorite ? "bookmark" : "bookmark-outline"} 
               size={24} 
-              color={isFavorite ? "#FF6B6B" : "#fff"} 
+              color={isFavorite ? "#4A90E2" : "#fff"} 
             />
           </TouchableOpacity>
         </View>
@@ -151,7 +151,7 @@ const Card: React.FC<CardProps> = ({ item, onFlipChange }) => {
               key={index} 
               style={[
                 styles.indicatorDot, 
-                { backgroundColor: index === currentImageIndex ? '#FF6B6B' : 'rgba(255,255,255,0.6)' }
+                { backgroundColor: index === currentImageIndex ? '#4A90E2' : 'rgba(255,255,255,0.6)' }
               ]} 
             />
           ))}
@@ -297,7 +297,7 @@ const styles = StyleSheet.create({
   },
   favoriteButtonActive: {
     backgroundColor: 'white',
-    borderColor: '#FF6B6B',
+    borderColor: '#4A90E2',
   },
   flipButton: {
     position: 'absolute',
@@ -344,7 +344,7 @@ const styles = StyleSheet.create({
   backSectionTitle: {
     fontSize: 18,
     fontWeight: '600',
-    color: '#FF6B6B',
+    color: '#4A90E2',
     marginBottom: 10,
   },
   backText: {

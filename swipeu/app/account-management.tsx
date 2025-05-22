@@ -288,7 +288,7 @@ const AccountManagementScreen = () => {
         <Animated.View style={{opacity: fadeAnim, transform: [{translateY: slideAnim}], marginTop: 10}}>
           <View style={styles.settingItem}>
             <View style={styles.settingIconContainer}>
-              <MaterialCommunityIcons name="theme-light-dark" size={22} color="#9C27B0" />
+              <MaterialCommunityIcons name="theme-light-dark" size={22} color="#4A90E2" />
             </View>
             <View style={styles.settingTextContainer}>
               <Text style={styles.settingLabel}>Dark Mode</Text>
@@ -297,7 +297,7 @@ const AccountManagementScreen = () => {
               </Text>
             </View>
             <Switch
-              trackColor={{ false: "#e0e0e0", true: "#9C27B0" }}
+              trackColor={{ false: "#e0e0e0", true: "#4A90E2" }}
               thumbColor={isDarkModeEnabled ? "#fff" : "#fff"}
               ios_backgroundColor="#e0e0e0"
               onValueChange={toggleDarkMode}
@@ -620,7 +620,7 @@ const styles = StyleSheet.create({
     position: 'absolute',
     bottom: 0,
     right: 0,
-    backgroundColor: '#FF6B6B',
+    backgroundColor: '#4A90E2',
     width: 28,
     height: 28,
     borderRadius: 14,
@@ -723,7 +723,7 @@ const styles = StyleSheet.create({
     color: '#333',
   },
   subscriptionBadge: {
-    backgroundColor: '#FF6B6B',
+    backgroundColor: '#4A90E2',
     paddingHorizontal: 16,
     paddingVertical: 6,
     borderRadius: 20,
@@ -866,7 +866,7 @@ const styles = StyleSheet.create({
     marginRight: 10,
   },
   saveButton: {
-    backgroundColor: '#FF6B6B',
+    backgroundColor: '#4A90E2',
     marginLeft: 10,
   },
   cancelButtonText: {

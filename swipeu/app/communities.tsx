@@ -369,7 +369,7 @@ const CommunitiesScreen = () => {
       <View style={styles.sectionHeader}>
         <LinearGradient
           colors={isJoinedSection ? 
-            ['#FF6B6B20', '#FF6B6B10', 'transparent'] : 
+            ['#4A90E220', '#4A90E210', 'transparent'] : 
             ['#4285F420', '#4285F410', 'transparent']}
           start={[0, 0]}
           end={[1, 0]}
@@ -379,23 +379,23 @@ const CommunitiesScreen = () => {
           <MaterialCommunityIcons 
             name={icon} 
             size={20} 
-            color={isJoinedSection ? '#FF6B6B' : '#4285F4'} 
+            color={isJoinedSection ? '#4A90E2' : '#4285F4'} 
           />
         </View>
         <Text style={[
           styles.sectionTitle,
-          isJoinedSection && {color: '#FF6B6B'}
+          isJoinedSection && {color: '#4A90E2'}
         ]}>
           {section.title}
         </Text>
         {section.data.length > 0 && (
           <View style={[
             styles.sectionCountContainer,
-            isJoinedSection && {backgroundColor: '#FF6B6B20'}
+            isJoinedSection && {backgroundColor: '#4A90E220'}
           ]}>
             <Text style={[
               styles.sectionCount,
-              isJoinedSection && {color: '#FF6B6B'}
+              isJoinedSection && {color: '#4A90E2'}
             ]}>
               {section.data.length}
             </Text>
@@ -500,7 +500,7 @@ const CommunitiesScreen = () => {
                   {
                     backgroundColor: sortBtnAnim.mostPopular.interpolate({
                       inputRange: [0, 1],
-                      outputRange: ['#f0f0f0', '#FF6B6B']
+                      outputRange: ['#f0f0f0', '#4A90E2']
                     })
                   }
                 ]}
@@ -538,7 +538,7 @@ const CommunitiesScreen = () => {
                   {
                     backgroundColor: sortBtnAnim.leastPopular.interpolate({
                       inputRange: [0, 1],
-                      outputRange: ['#f0f0f0', '#FF6B6B']
+                      outputRange: ['#f0f0f0', '#4A90E2']
                     })
                   }
                 ]}
@@ -579,7 +579,7 @@ const CommunitiesScreen = () => {
             <View style={styles.sectionHeader}>
               <LinearGradient
                 colors={section.title.includes('Joined') ? 
-                  ['#FF6B6B20', '#FF6B6B10', 'transparent'] : 
+                  ['#4A90E220', '#4A90E210', 'transparent'] : 
                   ['#4285F420', '#4285F410', 'transparent']}
                 start={[0, 0]}
                 end={[1, 0]}
@@ -589,23 +589,23 @@ const CommunitiesScreen = () => {
                 <MaterialCommunityIcons 
                   name={section.title.includes('Joined') ? 'star' : 'school'} 
                   size={20} 
-                  color={section.title.includes('Joined') ? '#FF6B6B' : '#4285F4'} 
+                  color={section.title.includes('Joined') ? '#4A90E2' : '#4285F4'} 
                 />
               </View>
               <Text style={[
                 styles.sectionTitle,
-                section.title.includes('Joined') && {color: '#FF6B6B'}
+                section.title.includes('Joined') && {color: '#4A90E2'}
               ]}>
                 {section.title}
               </Text>
               {section.data.length > 0 && (
                 <View style={[
                   styles.sectionCountContainer,
-                  section.title.includes('Joined') && {backgroundColor: '#FF6B6B20'}
+                  section.title.includes('Joined') && {backgroundColor: '#4A90E220'}
                 ]}>
                   <Text style={[
                     styles.sectionCount,
-                    section.title.includes('Joined') && {color: '#FF6B6B'}
+                    section.title.includes('Joined') && {color: '#4A90E2'}
                   ]}>
                     {section.data.length}
                   </Text>
@@ -618,7 +618,7 @@ const CommunitiesScreen = () => {
               <View style={styles.collegesRow}>
                 {section.data.map((item, index) => {
                   const isJoined = joinedCommunities.includes(item.id);
-                  const itemColor = item.color || '#FF6B6B';
+                  const itemColor = item.color || '#4A90E2';
                   
                   return (
                     <Animated.View
@@ -698,7 +698,7 @@ const CommunitiesScreen = () => {
             {selectedCollege && (
               <>
                 <LinearGradient
-                  colors={['#FF6B6B10', '#f8f9fa']}
+                  colors={['#4A90E210', '#f8f9fa']}
                   style={styles.modalGradient}
                 />
                 <View style={styles.modalHeader}>
@@ -739,7 +739,7 @@ const CommunitiesScreen = () => {
                     activeOpacity={0.8}
                   >
                     <LinearGradient
-                      colors={['#FF6B6B', '#FF8E8E']}
+                      colors={['#4A90E2', '#6AB0FF']}
                       start={[0, 0]}
                       end={[1, 0]}
                       style={styles.joinButtonGradient}
@@ -886,7 +886,7 @@ const styles = StyleSheet.create({
   },
   joinedCollegeItem: {
     borderWidth: 2,
-    borderColor: '#FF6B6B15',
+    borderColor: '#4A90E215',
     backgroundColor: '#FFFDFD',
   },
   logoContainer: {
@@ -1073,7 +1073,7 @@ const styles = StyleSheet.create({
   emptyJoinedContainer: {
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: '#FFF5F5',
+    backgroundColor: '#F0F7FF',
     borderRadius: 12,
     padding: 20,
     marginTop: 10,
@@ -1082,7 +1082,7 @@ const styles = StyleSheet.create({
   emptyJoinedText: {
     fontSize: 15,
     fontWeight: '600',
-    color: '#FF6B6B',
+    color: '#4A90E2',
     marginBottom: 5,
   },
   emptyJoinedSubtext: {
@@ -1182,7 +1182,7 @@ const styles = StyleSheet.create({
     color: '#999',
   },
   testTypeTextActive: {
-    color: '#FF6B6B',
+    color: '#4A90E2',
   },
   testScoreLabel: {
     fontSize: 16,

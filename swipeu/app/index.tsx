@@ -396,7 +396,12 @@ export default function Index() {
     <SafeAreaView style={styles.container}>
       <StatusBar barStyle="dark-content" />
       <View style={styles.header}>
-        <Text style={styles.logo}>SWIPEU</Text>
+        <View style={styles.topRow}>
+          <Text style={styles.logo}>SWIPEU</Text>
+          <TouchableOpacity style={styles.profileButton} onPress={handleProfilePress}>
+            <Ionicons name="person-circle" size={32} color="#FF6B6B" />
+          </TouchableOpacity>
+        </View>
         <View style={styles.searchContainer}>
           <Ionicons name="search" size={20} color="#666" style={styles.searchIcon} />
           <TextInput
@@ -407,9 +412,6 @@ export default function Index() {
             placeholderTextColor="#999"
           />
         </View>
-        <TouchableOpacity style={styles.profileButton} onPress={handleProfilePress}>
-          <Ionicons name="person-circle" size={32} color="#FF6B6B" />
-        </TouchableOpacity>
       </View>
       <View style={styles.cardContainer}>
         {renderCards()}
@@ -424,14 +426,19 @@ const styles = StyleSheet.create({
     backgroundColor: '#f5f7fa',
   },
   header: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'space-between',
+    flexDirection: 'column',
     paddingHorizontal: 16,
     paddingVertical: 10,
     backgroundColor: '#fff',
     borderBottomWidth: 1,
     borderBottomColor: '#eee',
+  },
+  topRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    width: '100%',
+    marginBottom: 12,
   },
   logo: {
     fontSize: 24,
@@ -439,14 +446,13 @@ const styles = StyleSheet.create({
     color: '#FF6B6B',
   },
   searchContainer: {
-    flex: 1,
     flexDirection: 'row',
     alignItems: 'center',
     backgroundColor: '#f5f5f5',
     borderRadius: 20,
-    marginHorizontal: 10,
     paddingHorizontal: 12,
     height: 36,
+    width: '100%',
   },
   searchIcon: {
     marginRight: 8,

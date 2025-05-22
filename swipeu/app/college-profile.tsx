@@ -321,7 +321,7 @@ const styles = StyleSheet.create({
   headerTitleText: {
     fontSize: 28,
     fontWeight: 'bold',
-    color: '#E9746C', // Theme color
+    color: '#4A90E2', // Theme color
   },
   searchBarPlaceholder: {
     flexDirection: 'row',
@@ -346,7 +346,7 @@ const styles = StyleSheet.create({
     paddingBottom: 30, // Ensure space at the bottom of scroll
   },
   contentCard: {
-    backgroundColor: '#E9746C', // Reddish background from the image
+    backgroundColor: '#4A90E2', // Light blue background 
     borderRadius: 20,
     padding: 25,
     shadowColor: '#000',
@@ -397,7 +397,7 @@ const styles = StyleSheet.create({
   },
   // Re-use existing back button style or a new one for error screen
   errorScreenBackButton: { // Renamed to avoid conflict if styles were merged
-    backgroundColor: '#E9746C',
+    backgroundColor: '#4A90E2',
     paddingVertical: 10,
     paddingHorizontal: 20,
     borderRadius: 8,
@@ -547,7 +547,7 @@ const styles = StyleSheet.create({
   },
   acceptanceRate: {
     fontSize: 14,
-    color: '#E9746C', // Theme color
+    color: '#4A90E2', // Theme color
     fontWeight: 'bold',
     marginTop: 10,
   },

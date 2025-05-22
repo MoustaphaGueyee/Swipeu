@@ -1,0 +1,13 @@
+editProfileButton: {
+  position: 'absolute',
+  bottom: 0,
+  right: 0,
+  backgroundColor: '#4A90E2',
+  width: 28,
+  height: 28,
+  borderRadius: 14,
+  justifyContent: 'center',
+  alignItems: 'center',
+  borderWidth: 2,
+  borderColor: '#fff',
+}, 
